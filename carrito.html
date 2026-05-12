@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>SWY - Carrito</title>
+    <link rel="stylesheet" href="css/css_carrito.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img class="logo" src="Assets/LOGO.png" alt="SWY Logo"></a>
+        </div>
+        
+        <nav class="nav-desktop">
+            <a href="catalogo.html">Catálogo</a>
+            <a href="aboutus.html">Sobre nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="testimonios.html">Testimonios</a>
+        </nav>
+
+        <div class="header-icons">
+            <a href="carrito.html" class="cart-icon"><img src="Assets/carro-de-la-compra.png" alt="Carrito"></a>
+            <div class="menu-icon" id="menuIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="catalogo.html">Catálogo</a>
+        <a href="aboutus.html">Sobre nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="testimonios.html">Testimonios</a>
+        <a href="carrito.html">Carrito</a>
+    </div>
+
+    <!-- ========== CARRITO ========== -->
+    <main class="carrito-container">
+        <h1 class="carrito-titulo">MI CARRITO</h1>
+        
+        <div class="carrito-grid">
+            <!-- Lista de productos -->
+            <div class="carrito-productos" id="carritoProductos">
+                <!-- Los productos se cargarán dinámicamente con JS -->
+            </div>
+
+            <!-- Resumen -->
+            <div class="carrito-resumen">
+                <h3>Resumen del pedido</h3>
+                <div class="resumen-linea">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0</span>
+                </div>
+                <div class="resumen-linea">
+                    <span>Envío:</span>
+                    <span id="envio">$99</span>
+                </div>
+                <div class="resumen-linea total">
+                    <span>Total:</span>
+                    <span id="total">$0</span>
+                </div>
+                <button class="btn-pagar" id="btnPagar">Proceder al pago</button>
+                <a href="catalogo.html" class="btn-seguir">Seguir comprando</a>
+            </div>
+        </div>
+
+        <!-- Carrito vacío -->
+        <div class="carrito-vacio" id="carritoVacio" style="display: none;">
+            <p>🛒 Tu carrito está vacío</p>
+            <a href="catalogo.html" class="btn-seguir">Explorar catálogo</a>
+        </div>
+    </main>
+
+    <!-- Modal de pago (simple) -->
+    <div class="modal" id="modalPago">
+        <div class="modal-content">
+            <span class="modal-close" id="closeModal">&times;</span>
+            <h2>Finalizar compra</h2>
+            <p>Esta es una simulación. En una tienda real, aquí irían los datos de pago.</p>
+            <button class="btn-pagar" id="confirmarPago">Confirmar compra</button>
+        </div>
+    </div>
+
+    <footer>
+        <img class="logo" src="Assets/logo b.png" alt="logo">
+        <nav>
+            <a href="https://www.instagram.com/swy_compress/" class="rrss" target="_blank" rel="noopener noreferrer"><img src="Assets/instagram.png"></a>
+            <a href="https://web.facebook.com/profile.php?id=61582123889878" class="rrss" target="_blank" rel="noopener noreferrer"><img src="Assets/facebook.png"></a>
+        </nav>
+        <nav class="navfot1">
+            <a href="aboutus.html">sobre nosotros</a>
+            <a href="contacto.html">Contactanos</a>
+            <a href="testimonios.html">Clientes</a>
+            <a href="terminos.html">Terminos de privacidad</a>
+            <a href="terminos.html">Politica de uso</a>
+        </nav>
+        <nav id="navfot2">
+            <a href="catalogo.html">baja</a>
+            <a href="catalogo.html">media</a>
+            <a href="catalogo.html">alta</a>
+            <a href="carrito.html">carrito</a>
+        </nav>
+    </footer>
+
+    <script src="js/script_carrito.js"></script>
+</body>
+
+</html>

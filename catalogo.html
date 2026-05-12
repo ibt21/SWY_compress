@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>SWY - Catálogo</title>
+    <link rel="stylesheet" href="css/css_catalogo.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img class="logo" src="Assets/LOGO.png" alt="SWY Logo"></a>
+        </div>
+        
+        <!-- Menú de escritorio -->
+        <nav class="nav-desktop">
+            <a href="catalogo.html">Catálogo</a>
+            <a href="aboutus.html">Sobre nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="testimonios.html">Testimonios</a>
+        </nav>
+
+        <!-- Íconos de carrito y menú hamburguesa -->
+        <div class="header-icons">
+            <a href="carrito.html" class="cart-icon"><img src="Assets/carro-de-la-compra.png" alt="Carrito"></a>
+            <div class="menu-icon" id="menuIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú móvil -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="catalogo.html">Catálogo</a>
+        <a href="aboutus.html">Sobre nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="testimonios.html">Testimonios</a>
+    </div>
+
+    <!-- Título de la página -->
+    <h1 class="page-title">NUESTROS CALCETINES</h1>
+    <p class="page-subtitle">Compresión real, colores vibrantes, estilo único</p>
+
+    <!-- SECCIÓN 1: BAJA COMPRESIÓN -->
+    <section class="categoria" id="baja">
+        <div class="categoria-header">
+            <div class="color-badge baja-badge"></div>
+            <h2>BAJA COMPRESIÓN</h2>
+            <p>Ideal para jornadas ligeras, home office o uso casual. 10-15 mmHg</p>
+        </div>
+        <div class="productos-grid" id="baja-grid">
+            <!-- Los productos se cargarán con JS -->
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: MEDIA COMPRESIÓN -->
+    <section class="categoria" id="media">
+        <div class="categoria-header">
+            <div class="color-badge media-badge"></div>
+            <h2>MEDIA COMPRESIÓN</h2>
+            <p>Perfecta para jornadas de 8+ horas. 15-20 mmHg</p>
+        </div>
+        <div class="productos-grid" id="media-grid">
+            <!-- Los productos se cargarán con JS -->
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3: ALTA COMPRESIÓN -->
+    <section class="categoria" id="alta">
+        <div class="categoria-header">
+            <div class="color-badge alta-badge"></div>
+            <h2>ALTA COMPRESIÓN</h2>
+            <p>Para quienes necesitan soporte extra. 20-25 mmHg</p>
+        </div>
+        <div class="productos-grid" id="alta-grid">
+            <!-- Los productos se cargarán con JS -->
+        </div>
+    </section>
+
+    <footer>
+        <img class="logo" src="Assets/logo b.png" alt="logo">
+        <nav>
+            <a href="https://www.instagram.com/swy_compress/" class="rrss" target="_blank" rel="noopener noreferrer"><img src="Assets/instagram.png"></a>
+            <a href="https://web.facebook.com/profile.php?id=61582123889878" class="rrss" target="_blank" rel="noopener noreferrer"><img src="Assets/facebook.png"></a>
+        </nav>
+        <nav class="navfot1">
+            <a href="aboutus.html" class="afoot1">sobre nosotros</a>
+            <a href="contacto.html" class="afoot1">Contactanos</a>
+            <a href="testimonios.html" class="afoot1">Clientes</a>
+            <a href="terminos.html" class="afoot1">Terminos de privacidad</a>
+            <a href="terminos.html" class="afoot1">Politica de uso</a>
+        </nav>
+        <nav id="navfot2">
+            <a href="catalogo.html" class="afoot2">baja</a>
+            <a href="catalogo.html" class="afoot2">media</a>
+            <a href="catalogo.html" class="afoot2">alta</a>
+            <a href="carrito.html" class="afoot2">carrito</a>
+        </nav>
+    </footer>
+
+    <script src="scripts/script_catalogo.js"></script>
+</body>
+
+</html>

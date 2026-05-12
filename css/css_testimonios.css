@@ -1,0 +1,469 @@
+:root {
+    --rojo: #ff5e62;
+    --morado: #6a30c4;
+    --lima: #e4f04b;
+    --oscuro: #2b1354;
+    --blanco: #fdfdfd;
+    --gris-claro: #f5f5f5;
+    --gris-oscuro: #333;
+    --gris-medio: #666;
+}
+
+@font-face {
+    font-family: TT Milks;
+    src: url(../fonts/TT\ Milks\ Casual\ Pie\ Trial\ Base.otf);
+}
+
+@font-face {
+    font-family: nunito;
+    src: url(../fonts/Nunito-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: starborn;
+    src: url(../fonts/Starborn.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--blanco);
+    font-family: 'nunito', sans-serif;
+}
+
+/* ========== HEADER (mismo que index) ========== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--blanco);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #eee;
+}
+
+.logo-container .logo {
+    height: 50px;
+    width: auto;
+}
+
+.nav-desktop {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-desktop a {
+    font-family: TT Milks;
+    text-decoration: none;
+    color: var(--oscuro);
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-desktop a:hover {
+    color: var(--rojo);
+}
+
+.nav-desktop a:last-child {
+    color: var(--rojo);
+    border-bottom: 2px solid var(--rojo);
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-icon img {
+    height: 28px;
+    width: auto;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-icon span {
+    width: 28px;
+    height: 3px;
+    background-color: var(--oscuro);
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--oscuro);
+    padding: 20px;
+    gap: 15px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.mobile-menu a {
+    font-family: TT Milks;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.mobile-menu a:last-child {
+    color: var(--lima);
+    border-bottom: none;
+}
+
+/* ========== SECCIÓN DE TESTIMONIOS ========== */
+.testimonios {
+    padding: 60px 30px;
+    background: linear-gradient(135deg, var(--gris-claro) 0%, var(--blanco) 100%);
+}
+
+.testimonios-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.testimonios-titulo {
+    font-family: starborn;
+    font-size: 2.5rem;
+    color: var(--oscuro);
+    margin-bottom: 15px;
+}
+
+.testimonios-subtitulo {
+    font-size: 1rem;
+    color: var(--gris-medio);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Grid de tarjetas */
+.testimonios-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Tarjeta individual */
+.testimonio-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    background-color: var(--blanco);
+    border-radius: 30px;
+    padding: 35px 25px 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+.testimonio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+}
+
+/* Icono arriba */
+.card-icono {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+/* Estrellas */
+.card-estrellas {
+    color: var(--lima);
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Texto del testimonio */
+.card-texto {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--gris-oscuro);
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+/* Autor */
+.card-autor {
+    margin-bottom: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.autor-nombre {
+    font-family: TT Milks;
+    font-size: 1rem;
+    color: var(--oscuro);
+    margin-bottom: 5px;
+}
+
+.autor-profesion {
+    font-size: 0.75rem;
+    color: var(--gris-medio);
+}
+
+/* Footer de la tarjeta */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.card-tipo {
+    font-size: 0.7rem;
+    background-color: var(--gris-claro);
+    padding: 5px 12px;
+    border-radius: 20px;
+    color: var(--gris-medio);
+}
+
+.card-color {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* CTA final */
+.testimonios-cta {
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, var(--oscuro) 0%, #3d1f7a 100%);
+    border-radius: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonios-cta p {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-family: TT Milks;
+}
+
+.cta-boton {
+    display: inline-block;
+    background: var(--morado);
+    color: white;
+    text-decoration: none;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-family: TT Milks;
+    font-size: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-boton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background-color: var(--oscuro);
+    color: white;
+    padding: 40px 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+
+footer img.logo {
+    height: 50px;
+    width: auto;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    transition: opacity 0.3s;
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.navfot1,
+#navfot2 {
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav:first-of-type {
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.rrss {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    line-height: 0;
+}
+
+.rrss:hover {
+    transform: scale(1.1);
+}
+
+.rrss img {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .testimonios {
+        padding: 40px 20px;
+    }
+
+    .testimonios-titulo {
+        font-size: 1.8rem;
+    }
+
+    .testimonios-subtitulo {
+        font-size: 0.85rem;
+    }
+
+    .testimonios-grid {
+        gap: 25px;
+    }
+
+    .testimonio-card {
+        min-width: 100%;
+        max-width: 100%;
+        padding: 30px 20px;
+    }
+
+    .card-texto {
+        font-size: 0.9rem;
+    }
+
+    .testimonios-cta {
+        margin-top: 40px;
+        padding: 30px 20px;
+    }
+
+    .testimonios-cta p {
+        font-size: 1rem;
+    }
+
+    .cta-boton {
+        padding: 10px 30px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 25px;
+    }
+
+    footer img.logo {
+        justify-self: center;
+    }
+
+    footer nav {
+        align-items: center;
+    }
+
+    .navfot1,
+    #navfot2 {
+        align-items: center;
+    }
+
+    footer nav:first-of-type {
+        justify-content: center;
+    }
+
+    .rrss img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container .logo {
+        height: 40px;
+    }
+
+    .cart-icon img {
+        height: 22px;
+    }
+
+    .testimonios-titulo {
+        font-size: 1.4rem;
+    }
+
+    .testimonios-subtitulo {
+        font-size: 0.75rem;
+    }
+
+    .card-icono {
+        font-size: 2.5rem;
+    }
+
+    .card-estrellas {
+        font-size: 1rem;
+    }
+
+    .card-texto {
+        font-size: 0.85rem;
+    }
+
+    .autor-nombre {
+        font-size: 0.9rem;
+    }
+}

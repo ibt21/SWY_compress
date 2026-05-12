@@ -1,0 +1,479 @@
+:root {
+    --rojo: #ff5e62;
+    --morado: #6a30c4;
+    --lima: #e4f04b;
+    --oscuro: #2b1354;
+    --blanco: #fdfdfd;
+    --gris-claro: #f5f5f5;
+    --gris-oscuro: #333;
+    --error: #e74c3c;
+    --exito: #2ecc71;
+}
+
+@font-face {
+    font-family: TT Milks;
+    src: url(../fonts/TT\ Milks\ Casual\ Pie\ Trial\ Base.otf);
+}
+
+@font-face {
+    font-family: nunito;
+    src: url(../fonts/Nunito-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: starborn;
+    src: url(../fonts/Starborn.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--blanco);
+    font-family: 'nunito', sans-serif;
+}
+
+/* ========== HEADER (mismo que index) ========== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--blanco);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #eee;
+}
+
+.logo-container .logo {
+    height: 50px;
+    width: auto;
+}
+
+.nav-desktop {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-desktop a {
+    font-family: TT Milks;
+    text-decoration: none;
+    color: var(--oscuro);
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-desktop a:hover {
+    color: var(--rojo);
+}
+
+.nav-desktop a:nth-child(3) {
+    color: var(--rojo);
+    border-bottom: 2px solid var(--rojo);
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-icon img {
+    height: 28px;
+    width: auto;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-icon span {
+    width: 28px;
+    height: 3px;
+    background-color: var(--oscuro);
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--oscuro);
+    padding: 20px;
+    gap: 15px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.mobile-menu a {
+    font-family: TT Milks;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.mobile-menu a:nth-child(3) {
+    color: var(--lima);
+}
+
+.mobile-menu a:last-child {
+    border-bottom: none;
+}
+
+/* ========== SECCIÓN DE CONTACTO ========== */
+.contacto {
+    padding: 60px 30px;
+    background: linear-gradient(135deg, var(--gris-claro) 0%, var(--blanco) 100%);
+}
+
+.contacto-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--blanco);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Foto destacada */
+.contacto-imagen {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.contacto-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.imagen-overlay h2 {
+    font-family: starborn;
+    font-size: 2rem;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+.imagen-overlay p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Formulario */
+.contacto-formulario {
+    padding: 50px;
+}
+
+.formulario-titulo {
+    font-family: starborn;
+    font-size: 2rem;
+    color: var(--oscuro);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.formulario-subtitulo {
+    text-align: center;
+    color: var(--gris-oscuro);
+    margin-bottom: 40px;
+    font-size: 0.95rem;
+}
+
+/* Campos del formulario */
+.campo-grupo {
+    margin-bottom: 25px;
+}
+
+.campo-grupo label {
+    display: block;
+    font-family: TT Milks;
+    font-size: 0.9rem;
+    color: var(--oscuro);
+    margin-bottom: 8px;
+}
+
+.campo-grupo input,
+.campo-grupo textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-family: 'nunito', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s;
+    background-color: var(--blanco);
+}
+
+.campo-grupo input:focus,
+.campo-grupo textarea:focus {
+    outline: none;
+    border-color: var(--morado);
+    box-shadow: 0 0 0 3px rgba(106, 48, 196, 0.1);
+}
+
+.campo-grupo input.error,
+.campo-grupo textarea.error {
+    border-color: var(--error);
+}
+
+/* Botón de envío */
+.btn-enviar {
+    width: 100%;
+    background:  var(--oscuro);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-family: TT Milks;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 94, 98, 0.3);
+}
+
+.btn-enviar:active {
+    transform: translateY(0);
+}
+
+.form-nota {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #999;
+    margin-top: 15px;
+}
+
+/* Mensajes de éxito/error (JavaScript) */
+.mensaje-form {
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    display: none;
+}
+
+.mensaje-form.exito {
+    background-color: rgba(46, 204, 113, 0.15);
+    color: var(--exito);
+    border: 1px solid var(--exito);
+    display: block;
+}
+
+.mensaje-form.error {
+    background-color: rgba(231, 76, 60, 0.15);
+    color: var(--error);
+    border: 1px solid var(--error);
+    display: block;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background-color: var(--oscuro);
+    color: white;
+    padding: 40px 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+
+footer img.logo {
+    height: 50px;
+    width: auto;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    transition: opacity 0.3s;
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.navfot1,
+#navfot2 {
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav:first-of-type {
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.rrss {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    line-height: 0;
+}
+
+.rrss:hover {
+    transform: scale(1.1);
+}
+
+.rrss img {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .contacto {
+        padding: 40px 20px;
+    }
+
+    .contacto-imagen {
+        height: 220px;
+    }
+
+    .imagen-overlay h2 {
+        font-size: 1.5rem;
+    }
+
+    .imagen-overlay p {
+        font-size: 0.85rem;
+    }
+
+    .contacto-formulario {
+        padding: 30px 25px;
+    }
+
+    .formulario-titulo {
+        font-size: 1.6rem;
+    }
+
+    .formulario-subtitulo {
+        font-size: 0.85rem;
+        margin-bottom: 30px;
+    }
+
+    .campo-grupo input,
+    .campo-grupo textarea {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    .btn-enviar {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 25px;
+    }
+
+    footer img.logo {
+        justify-self: center;
+    }
+
+    footer nav {
+        align-items: center;
+    }
+
+    .navfot1,
+    #navfot2 {
+        align-items: center;
+    }
+
+    footer nav:first-of-type {
+        justify-content: center;
+    }
+
+    .rrss img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container .logo {
+        height: 40px;
+    }
+
+    .cart-icon img {
+        height: 22px;
+    }
+
+    .contacto {
+        padding: 30px 15px;
+    }
+
+    .contacto-imagen {
+        height: 180px;
+    }
+
+    .imagen-overlay h2 {
+        font-size: 1.2rem;
+    }
+
+    .imagen-overlay p {
+        font-size: 0.75rem;
+    }
+
+    .contacto-formulario {
+        padding: 25px 20px;
+    }
+
+    .formulario-titulo {
+        font-size: 1.3rem;
+    }
+
+    .campo-grupo {
+        margin-bottom: 18px;
+    }
+
+    .campo-grupo label {
+        font-size: 0.8rem;
+    }
+}

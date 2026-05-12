@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>SWY - Contacto</title>
+    <link rel="stylesheet" href="css/css_contacto.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img class="logo" src="Assets/LOGO.png" alt="SWY Logo"></a>
+        </div>
+
+        <!-- Menú de escritorio -->
+        <nav class="nav-desktop">
+            <a href="catalogo.html">Catálogo</a>
+            <a href="aboutus.html">Sobre nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="testimonios.html">Testimonios</a>
+        </nav>
+
+        <!-- Íconos de carrito y menú hamburguesa -->
+        <div class="header-icons">
+            <a href="carrito.html" class="cart-icon"><img src="Assets/carro-de-la-compra.png" alt="Carrito"></a>
+            <div class="menu-icon" id="menuIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú móvil -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="catalogo.html">Catálogo</a>
+        <a href="aboutus.html">Sobre nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="testimonios.html">Testimonios</a>
+    </div>
+
+    <!-- ========== SECCIÓN DE CONTACTO ========== -->
+    <section class="contacto">
+        <div class="contacto-container">
+
+            <!-- Foto destacada -->
+            <div class="contacto-imagen">
+                <img src="Assets/contacto-placeholder.jpg" alt="Contacta con SWY">
+            </div>
+
+            <!-- Formulario -->
+            <div class="contacto-formulario">
+                <h1 class="formulario-titulo">CONTÁCTANOS</h1>
+                <p class="formulario-subtitulo">Déjanos un mensaje y te responderemos lo antes posible</p>
+
+                <form action="#" method="POST" id="formContacto">
+                    <!-- Nombre completo -->
+                    <div class="campo-grupo">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej: Ana García">
+                    </div>
+
+                    <!-- Correo electrónico -->
+                    <div class="campo-grupo">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" required placeholder="Ej: ana@correo.com">
+                    </div>
+
+                    <!-- Asunto -->
+                    <div class="campo-grupo">
+                        <label for="asunto">Asunto *</label>
+                        <input type="text" id="asunto" name="asunto" required
+                            placeholder="Ej: Consulta sobre productos">
+                    </div>
+
+                    <!-- Mensaje / Descripción -->
+                    <div class="campo-grupo">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required
+                            placeholder="Cuéntanos qué necesitas..."></textarea>
+                    </div>
+
+                    <!-- Botón de envío -->
+                    <button type="submit" class="btn-enviar">ENVIAR MENSAJE</button>
+
+                    <p class="form-nota">* Campos obligatorios</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <img class="logo" src="Assets/logo b.png" alt="logo">
+        <nav>
+            <a href="https://www.instagram.com/swy_compress/" class="rrss" target="_blank"
+                rel="noopener noreferrer"><img src="Assets/instagram.png"></a>
+            <a href="https://web.facebook.com/profile.php?id=61582123889878" class="rrss" target="_blank"
+                rel="noopener noreferrer"><img src="Assets/facebook.png"></a>
+        </nav>
+        <nav class="navfot1">
+            <a href="aboutus.html" class="afoot1">sobre nosotros</a>
+            <a href="contacto.html" class="afoot1">Contactanos</a>
+            <a href="testimonios.html" class="afoot1">Clientes</a>
+            <a href="#" class="afoot1">Terminos de privacidad</a>
+            <a href="#" class="afoot1">Politica de uso</a>
+        </nav>
+        <nav id="navfot2">
+            <a href="catalogo.html" class="afoot2">baja</a>
+            <a href="catalogo.html" class="afoot2">media</a>
+            <a href="catalogo.html" class="afoot2">alta</a>
+            <a href="carrito.html" class="afoot2">carrito</a>
+        </nav>
+    </footer>
+
+    <script src="scripts/script_contacto.js"></script>
+</body>
+
+</html>
