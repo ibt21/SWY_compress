@@ -3,7 +3,7 @@
 
 const productos = {
     baja: [
-        { nombre: "SWY Breeze", descripcion: "10-15 mmHg · Algodón", precio: "$299", color: "rojo" },
+        { nombre: "SWY Breeze", descripcion: "10-15 mmHg · Algodón", precio: "$299", color: "rojo" "  },
         { nombre: "SWY Chill", descripcion: "10-15 mmHg · Bambú", precio: "$329", color: "rojo" },
         { nombre: "SWY Casual", descripcion: "10-15 mmHg · Algodón", precio: "$279", color: "rojo" }
     ],
@@ -14,8 +14,8 @@ const productos = {
     ],
     alta: [
         { nombre: "SWY Max", descripcion: "20-25 mmHg · Algodón", precio: "$399", color: "lima" },
-        { nombre: "SWY Pro", descripcion: "20-25 mmHg · Bambú", precio: "$429", color: "lima" },
-        { nombre: "SWY Elite", descripcion: "20-25 mmHg · Algodón", precio: "$389", color: "lima" }
+        { nombre: "SWY Pro", descripcion: "20-25 mmHg · Bambú", precio: "$429", color: "lima" imagen: "Assets/msdconejo.png},
+        { nombre: "SWY Elite", descripcion: "20-25 mmHg · Algodón", precio: "$389", color: "lima" imagen: "Assets/mdsalien.png }
     ]
 };
 
