@@ -58,7 +58,7 @@ const productos = {
             descripcion: "20-25 mmHg · Bambú", 
             precio: "$429", 
             color: "lima",
-            imagen: "Assets/mdsalien"      // 👈 CAMBIA ESTA RUTA
+            imagen: "../Assets/mdsalien"      // 👈 CAMBIA ESTA RUTA
         },
         { 
             nombre: "SWY Elite", 
