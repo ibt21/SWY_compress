@@ -15,9 +15,9 @@ const productos = {
     alta: [
         { nombre: "SWY Max", descripcion: "20-25 mmHg · Algodón", precio: "$399", color: "lima" },
         { nombre: "SWY Pro", descripcion: "20-25 mmHg · Bambú", precio: "$429", color: "lima",
-            imagen: "Assets/msdconejo.png" },
+            imagen: "//Assets/msdconejo.png" },
         { nombre: "SWY Elite", descripcion: "20-25 mmHg · Algodón", precio: "$389", color: "lima",
-            imagen: "Assets/mdsalien.png"  }
+            imagen: "//Assets/mdsalien.png"  }
     ]
 };
 
