@@ -219,11 +219,6 @@ header {
     transform: translateY(-5px);
 }
 
-.mv-icon {
-    font-size: 3rem;
-    margin-bottom: 15px;
-}
-
 .mv-titulo {
     font-family: TT Milks;
     font-size: 2rem;
