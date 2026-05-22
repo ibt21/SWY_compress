@@ -3,7 +3,7 @@
 
 const productos = {
     baja: [
-        { nombre: "SWY Breeze", descripcion: "10-15 mmHg · Algodón", precio: "$299", color: "rojo" "  },
+        { nombre: "SWY Breeze", descripcion: "10-15 mmHg · Algodón", precio: "$299", color: "rojo" },
         { nombre: "SWY Chill", descripcion: "10-15 mmHg · Bambú", precio: "$329", color: "rojo" },
         { nombre: "SWY Casual", descripcion: "10-15 mmHg · Algodón", precio: "$279", color: "rojo" }
     ],
