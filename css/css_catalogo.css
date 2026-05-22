@@ -337,7 +337,12 @@ footer nav:first-of-type {
     height: 32px;
     display: block;
 }
-
+.producto-img-real {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Recorta la imagen para llenar el contenedor */
+    display: block;
+}
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
     header {
