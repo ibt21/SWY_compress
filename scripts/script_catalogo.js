@@ -65,7 +65,7 @@ const productos = {
             descripcion: "20-25 mmHg · Algodón", 
             precio: "$389", 
             color: "lima",
-            imagen: "Assets/msdconejo.png"    // 👈 CAMBIA ESTA RUTA
+            imagen: "../Assets/msdconejo.png"    // 👈 CAMBIA ESTA RUTA
         }
     ]
 };
@@ -84,7 +84,7 @@ function renderProductos(categoria, containerId) {
         // Verificar si la imagen existe, si no, mostrar placeholder
         const imagenHtml = producto.imagen ? 
             `<img src="${producto.imagen}" alt="${producto.nombre}" class="producto-img-real">` : 
-            `<div class="placeholder-img">🧦</div>`;
+            `<div class="placeholder-img"></div>`;
         
         card.innerHTML = `
             <div class="producto-imagen">
