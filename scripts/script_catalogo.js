@@ -5,21 +5,21 @@ const productos = {
             descripcion: "10-15 mmHg · Algodón", 
             precio: "$299", 
             color: "rojo",
-            imagen: "Assets/productos/breeze.jpg"  // 👈 CAMBIA ESTA RUTA
+            imagen: "../Assets/breeze.jpg"  // 👈 CAMBIA ESTA RUTA
         },
         { 
             nombre: "SWY Chill", 
             descripcion: "10-15 mmHg · Bambú", 
             precio: "$329", 
             color: "rojo",
-            imagen: "Assets/productos/chill.jpg"   // 👈 CAMBIA ESTA RUTA
+            imagen: "../Assets/chill.jpg"   // 👈 CAMBIA ESTA RUTA
         },
         { 
             nombre: "SWY Casual", 
             descripcion: "10-15 mmHg · Algodón", 
             precio: "$279", 
             color: "rojo",
-            imagen: "Assets/productos/casual.jpg"  // 👈 CAMBIA ESTA RUTA
+            imagen: "../Assets/casual.jpg"  // 👈 CAMBIA ESTA RUTA
         }
     ],
     media: [
@@ -28,21 +28,21 @@ const productos = {
             descripcion: "15-20 mmHg · Algodón", 
             precio: "$349", 
             color: "morado",
-            imagen: "Assets/productos/flow.jpg"     // 👈 CAMBIA ESTA RUTA
+            imagen: "../Assets/flow.jpg"     // 👈 CAMBIA ESTA RUTA
         },
         { 
             nombre: "SWY Pulse", 
             descripcion: "15-20 mmHg · Bambú", 
             precio: "$379", 
             color: "morado",
-            imagen: "Assets/productos/pulse.jpg"    // 👈 CAMBIA ESTA RUTA
+            imagen: "../Assets/pulse.jpg"    // 👈 CAMBIA ESTA RUTA
         },
         { 
             nombre: "SWY Glide", 
             descripcion: "15-20 mmHg · Algodón", 
             precio: "$329", 
             color: "morado",
-            imagen: "Assets/productos/glide.jpg"    // 👈 CAMBIA ESTA RUTA
+            imagen: "../Assets/glide.jpg"    // 👈 CAMBIA ESTA RUTA
         }
     ],
     alta: [
@@ -51,7 +51,7 @@ const productos = {
             descripcion: "20-25 mmHg · Algodón", 
             precio: "$399", 
             color: "lima",
-            imagen: "Assets/productos/max.jpg"      // 👈 CAMBIA ESTA RUTA
+            imagen: "../Assets/max.jpg"      // 👈 CAMBIA ESTA RUTA
         },
         { 
             nombre: "SWY Pro", 
