@@ -1,21 +1,21 @@
 const productos = {
     baja: [
         { 
-            nombre: "SWY Breeze", 
+            nombre: "SWY Cerdito", 
             descripcion: "10-15 mmHg · Algodón", 
             precio: "$299", 
             color: "rojo",
-            imagen: "../Assets/mdcerdito.png" 
+            imagen: "../Assets/mdcerdito.png"
         },
         { 
-            nombre: "SWY Chill", 
+            nombre: "SWY Perrito", 
             descripcion: "10-15 mmHg · Bambú", 
             precio: "$329", 
             color: "rojo",
-            imagen: "../Assets/mdsperro.png"   
+            imagen: "../Assets/mdsperro.png" 
         },
         { 
-            nombre: "SWY Casual", 
+            nombre: "SWY Ranita", 
             descripcion: "10-15 mmHg · Algodón", 
             precio: "$279", 
             color: "rojo",
@@ -24,44 +24,44 @@ const productos = {
     ],
     media: [
         { 
-            nombre: "SWY Flow", 
+            nombre: "SWY Ratón", 
             descripcion: "15-20 mmHg · Algodón", 
             precio: "$349", 
             color: "morado",
-            imagen: "../Assets/mdraton.png" 
+            imagen: "../Assets/mdraton.png"     
         },
         { 
-            nombre: "SWY Pulse", 
+            nombre: "SWY Gatito", 
             descripcion: "15-20 mmHg · Bambú", 
             precio: "$379", 
             color: "morado",
-            imagen: "../Assets/pulse.jpg" 
+            imagen: "../Assets/mdsgatitos.png" 
         },
         { 
-            nombre: "SWY Glide", 
+            nombre: "SWY Osito", 
             descripcion: "15-20 mmHg · Algodón", 
             precio: "$329", 
             color: "morado",
-            imagen: "../Assets/glide.jpg"   
+            imagen: "../Assets/mdoso.png"
         }
     ],
     alta: [
         { 
-            nombre: "SWY Max", 
+            nombre: "SWY Axolotitos", 
             descripcion: "20-25 mmHg · Algodón", 
             precio: "$399", 
             color: "lima",
-            imagen: "../Assets/max.jpg"   
+            imagen: "../Assets/mdsaxolotes.png"
         },
         { 
-            nombre: "SWY Pro", 
+            nombre: "SWY Alien", 
             descripcion: "20-25 mmHg · Bambú", 
             precio: "$429", 
             color: "lima",
             imagen: "../Assets/mdsalien.png"    
         },
         { 
-            nombre: "SWY Elite", 
+            nombre: "SWY Conejito", 
             descripcion: "20-25 mmHg · Algodón", 
             precio: "$389", 
             color: "lima",
