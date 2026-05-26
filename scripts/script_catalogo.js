@@ -5,21 +5,21 @@ const productos = {
             descripcion: "10-15 mmHg · Algodón", 
             precio: "$299", 
             color: "rojo",
-            imagen: "../Assets/breeze.jpg" 
+            imagen: "../Assets/mdcerdito.png" 
         },
         { 
             nombre: "SWY Chill", 
             descripcion: "10-15 mmHg · Bambú", 
             precio: "$329", 
             color: "rojo",
-            imagen: "../Assets/chill.jpg"   
+            imagen: "../Assets/mdsperro.png"   
         },
         { 
             nombre: "SWY Casual", 
             descripcion: "10-15 mmHg · Algodón", 
             precio: "$279", 
             color: "rojo",
-            imagen: "../Assets/casual.jpg" 
+            imagen: "../Assets/mdrana.png" 
         }
     ],
     media: [
@@ -28,7 +28,7 @@ const productos = {
             descripcion: "15-20 mmHg · Algodón", 
             precio: "$349", 
             color: "morado",
-            imagen: "../Assets/flow.jpg" 
+            imagen: "../Assets/mdraton.png" 
         },
         { 
             nombre: "SWY Pulse", 
